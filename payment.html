@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="payment-box">
+
+            <h1>Payment</h1>
+
+            <h2 id="totalAmount">
+                Total: ₹0
+            </h2>
+
+            <input type="text"
+            id="cardName"
+            placeholder="Card Holder Name">
+
+            <input type="text"
+            id="cardNumber"
+            placeholder="Card Number">
+
+            <div class="row">
+
+                <input type="text"
+                id="expiry"
+                placeholder="MM/YY">
+
+                <input type="password"
+                id="cvv"
+                placeholder="CVV">
+
+            </div>
+
+            <button onclick="payNow()">
+                Pay Now
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="payment.js"></script>
+
+</body>
+</html>

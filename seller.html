@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Local Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Local Marketplace</h1>
+
+    <div class="form">
+        <input type="text" id="name" placeholder="Product Name">
+        <input type="number" id="price" placeholder="Price">
+        <input type="text" id="category" placeholder="Category">
+        <input type="number" id="stock" placeholder="Stock">
+
+        <button onclick="addProduct()">Add Product</button>
+    </div>
+
+    <div id="products"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard</title>
+
+    <link rel="stylesheet" href="seller.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="sidebar">
+            <h2>LocalMart</h2>
+
+            <ul>
+                <li>Dashboard</li>
+                <li>Add Product</li>
+                <li>Orders</li>
+                <li>Customers</li>
+            </ul>
+        </div>
+
+        <div class="main">
+
+            <div class="topbar">
+                <h1>Seller Dashboard</h1>
+            </div>
+
+            <div class="stats">
+
+                <div class="card">
+                    <h3>Total Products</h3>
+                    <p id="totalProducts">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Total Orders</h3>
+                    <p>12</p>
+                </div>
+
+                <div class="card">
+                    <h3>Total Revenue</h3>
+                    <p>₹25,000</p>
+                </div>
+
+            </div>
+
+            <div class="product-form">
+
+                <h2>Add Product</h2>
+
+                <input type="text" id="name" placeholder="Product Name">
+
+                <input type="number" id="price" placeholder="Price">
+
+                <input type="text" id="category" placeholder="Category">
+
+                <input type="number" id="stock" placeholder="Stock">
+
+                <button onclick="addProduct()">
+                    Add Product
+                </button>
+
+            </div>
+
+<input type="text"
+id="searchInput"
+placeholder="Search products..."
+onkeyup="searchProducts()">
+
+
+            <div class="products-section">
+
+                <h2>Your Products</h2>
+
+                <div id="products"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="seller.js"></script>
+
+</body>
+</html>
+
+    <script src="script.js"></script>
+</body>
+</html>

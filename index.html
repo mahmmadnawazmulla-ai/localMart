@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Local Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="search-box">
+
+    <input type="text"
+    id="searchInput"
+    placeholder="Search products...">
+
+    <button onclick="searchProducts()">
+        Search
+    </button>
+
+</div>
+
+    <h1>Local Marketplace</h1>
+
+    <div class="form">
+        <input type="text" id="name" placeholder="Product Name">
+        <input type="number" id="price" placeholder="Price">
+        <input type="text" id="category" placeholder="Category">
+        <input type="number" id="stock" placeholder="Stock">
+
+        <button onclick="addProduct()">Add Product</button>
+    </div>
+<button onclick='addToCart(
+"${product.name}",
+${product.price}
+)'>
+Add To Cart
+</button>
+    <div id="products"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
